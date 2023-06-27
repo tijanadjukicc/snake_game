@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zmijica/igra</title>
+    <link rel="stylesheet" href="zmijica-dodatno/bootstrap.min.css">
+    <script src="zmijica-dodatno/bootstrap.min.js"></script>
+    <script src="zmijica-dodatno/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="uputstvo.css">
+    <script src="skripta.js"></script>
+</head>
+<body onload="startZmijica()" id="bodyG">
+    <div class="row" id="kraj">
+        <div class="col-12">
+        <p>GAME OVER</p>
+        <p id="ostvareniPoeni"></p>
+        <input type="text" name="korisnickoIme" id="user" placeholder="Unesite korisnicko ime"> <br>
+        <button class="button-54" role="button" onclick="pokupiUseraIPoene()">UNESI</button>
+        </div>
+    </div>
+    <div class="row" id="igraPanel">
+        <div class="col-10 igra">
+            <h2>zmijica</h2>
+            <hr>
+            <table id="polje">
+            </table>
+        </div>
+        <div class="col-2 panel">
+            <div>
+                <h5><b><u>poeni</u>:</b></h5>
+                <p id="scoreBoard"></p>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

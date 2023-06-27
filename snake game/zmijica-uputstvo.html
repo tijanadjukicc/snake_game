@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zmijica/uputstvo</title>
+    <link rel="stylesheet" href="zmijica-dodatno/bootstrap.min.css">
+    <script src="zmijica-dodatno/bootstrap.min.js"></script>
+    <script src="zmijica-dodatno/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="uputstvo.css">
+    <script src="skripta.js"></script>
+</head>
+<body id="bodyU">
+
+    <div class="row">
+        <div class="pravila col-10 uputstvo">
+            <h3 class="glavniNaslovi">Pravila igre:</h3>
+            <hr>
+            <ul>
+                <li>Zmijica je gladna i treba je nahraniti</li>
+                <li>Vaš zadatak je da nahranite zmijicu hranom koja se nalazi na tabli</li>
+                <li>Što više hrane pojede, zmijica je sitija, a vi imate više poena</li>
+                <li>Poeni koje nosi određena hrana:</li>
+                <table>
+                    <tr>
+                        <td><img src="zmijica-dodatno/paradajz.png" alt="P" class="vockePocetna"></td>
+                        <td>1pt</td>
+                    </tr>
+                    <tr>
+                        <td><img src="zmijica-dodatno/lubenica.png" alt="L" class="vockePocetna"></td>
+                        <td>10pt</td>
+                    </tr>
+                </table>
+                <li>Zmijicu ka hrani usmeravate strelicama na tastaturi</li>
+                <li>Glava zmijice je obojena crvenom, a ostatak tela zelenom bojom</li>
+                <img src="zmijica-dodatno/zmijica.png" alt="zmijica" id="zmijicaSlika">
+                <li><b>Vodite računa!</b> Igra se zavrsava kada se zmija sudari sa ivicama ili sobom!</li>
+                <li>Cilj igre je skupiti što više poena tj pojesti što više hrane!</li>
+            </ul>
+            <table class="zapocniRez">
+                <tr>
+                    <td class="dugmici"><button class="button-54" role="button" onclick="predjiNaIgru()">Započni</button></td>
+                    <td class="dugmici"><button class="button-54" role="button" onclick="otvoriRez()">Rezultati</button></td>
+                </tr>
+            </table>
+        </div>
+        
+        <!--PANEL-->
+        <div class="col-2 panel">
+            <span id="greska"></span>
+            <h3 class="panelNaslov">
+                Podešavanja igre:
+            </h3>
+            <hr>
+            <ul>
+                <li class="panelOpcije">Težina:</li>
+                <table>
+                    <tr>
+                        <td><input type="radio" id="lako" name="tezina" class="tezina"></td>
+                        <td>lako</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="srednje" name="tezina" class="tezina"></td>
+                        <td>srednje</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="tesko" name="tezina" class="tezina"></td>
+                        <td>tesko</td>
+                    </tr>
+                </table>
+                <br>
+                <li class="panelOpcije">Veličina tabele:</li>
+                <table>
+                    <tr>
+                        <td><input type="radio" id="81" name="dimenzije" class="dimenzije"></td>
+                        <td>9x9</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="144" name="dimenzije" class="dimenzije"></td>
+                        <td>12x12</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="256" name="dimenzije" class="dimenzije"></td>
+                        <td>16x16</td>
+                    </tr>
+                </table>
+                
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+    
+</body>
+</html>
